@@ -1,24 +1,45 @@
-# for loop with list
+# for loop with list data type
+# list data type: we will cover this later in detail.
+# for now, let's see the intro...
 
 # without list
-room0 = "dog"
-room1 = "cat"
-room2 = "bird"
+animal0 = "dog"
+animal1 = "cat"
+animal2 = "bird"
 
-print(room0)
-print(room1)
-print(room2)
+print(animal0)
+print(animal1)
+print(animal2)
 
 # with list
-rooms = ["dog", "cat", "bird"]
+animals = ["dog", "cat", "bird"]
 
+# indexing
+print(animals[0])
+
+# list with loop statment
 i = 0
 while i < 3:
-    print(rooms[i])
+    print(animals[i])
     i += 1
 
-# list data type: we will cover this later
-
 # for loop
-for r in rooms:
-    print(r)
+for animal in animals:
+    print(animal)
+    
+
+numbers = [1, 2, 3, 100, 20, 123]
+print(numbers)
+print(numbers[4])
+    
+for n in numbers:
+    if n == 100:
+        print("100")
+    print(n)
+    
+    
+    
+    
+    
+    
+#
