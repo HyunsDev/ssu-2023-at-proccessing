@@ -92,6 +92,8 @@ def draw():
             bricks[x / bWidth] = 0 
         
         
-# mission
-# - make 2 dimensional bricks     
+
+  
+    
+#  
         
