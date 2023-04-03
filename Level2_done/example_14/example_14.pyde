@@ -16,8 +16,8 @@ padColor = 0xff00ff00
 bColNo = 10
 bWidth = 0
 bHeight = 0
-bricks = [True for i in range(bColNo)]
-# bricks = [True] * 10
+#bricks = [True for i in range(bColNo)]
+bricks = [True] * 10
 
 def setup():
     size(800, 600)
@@ -88,9 +88,9 @@ def draw():
     # if the ball in in the region of bricks
     if y < bHeight:
         # when the ball hits the bricks
-        if bricks[x / bWidth]:
+        if bricks[x // bWidth]:
             ydir *= -1
-            bricks[x / bWidth] = 0 
+            bricks[x // bWidth] = False
         
         
 
