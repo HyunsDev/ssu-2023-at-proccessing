@@ -17,6 +17,7 @@ bColNo = 10
 bWidth = 0
 bHeight = 0
 bricks = [True for i in range(bColNo)]
+# bricks = [True] * 10
 
 def setup():
     size(800, 600)
@@ -58,8 +59,8 @@ def draw():
     padX = mouseX - padWidth/2
     rect(padX, padY, padWidth, 20, 15)
     
-    for i, b in enumerate(bricks):
-        if bricks[i]:
+    for i, brick in enumerate(bricks):
+        if brick:
             fill(0xff7E8AF0)
             rect(i*bWidth, 0, bWidth, bHeight, 50)        
     
@@ -92,6 +93,8 @@ def draw():
             bricks[x / bWidth] = 0 
         
         
+
+
 
   
     
