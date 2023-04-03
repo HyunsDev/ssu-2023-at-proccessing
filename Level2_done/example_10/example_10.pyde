@@ -9,7 +9,7 @@ print("Total sum is", total_sum)
 print("Average is", total_sum / len(scores))
 
 # find max
-current_max = scores[0];
+current_max = scores[0]
 for s in scores:
     if s > current_max:
         current_max = s
