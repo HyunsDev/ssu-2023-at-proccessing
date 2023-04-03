@@ -9,7 +9,12 @@ def draw():
         x = random(width)
         y = random(height)
         point(x, y)
+        #point(random(width), random(height))
         i += 1
     
 # Mission
-# - fill the canvas with circls in random position and random size
+# - fill the canvas with circls in random position, random color, and random size
+
+
+
+#
