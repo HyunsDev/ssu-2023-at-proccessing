@@ -16,6 +16,10 @@ animals = ["dog", "cat", "bird"]
 
 # indexing
 print(animals[0])
+print(animals[1])
+
+# index out of range ERROR
+print(animals[3])
 
 # list with loop statment
 i = 0
