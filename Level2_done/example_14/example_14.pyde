@@ -58,11 +58,12 @@ def draw():
     fill(padColor)
     padX = mouseX - padWidth/2
     rect(padX, padY, padWidth, 20, 15)
-    
+
+    # drawing bricks
+    fill(0xff7E8AF0) # brick color    
     for i, brick in enumerate(bricks):
         if brick:
-            fill(0xff7E8AF0)
-            rect(i*bWidth, 0, bWidth, bHeight, 50)        
+            rect(i*bWidth, 0, bWidth, bHeight, 50) # last parameter is for rounded rectangle     
     
     # ball bouncing 
     if x - diam/2 < 0: # left side check
@@ -73,10 +74,10 @@ def draw():
         xdir *= -1
         #padWidth = padWidth - 20
     
-    if y - diam/2 < 0:
+    if y - diam/2 < 0: # up 
         ydir *= -1
     
-    if y + diam/2 > height:
+    if y + diam/2 > height: # bottom
         ydir *= -1
     
     # checking collision with a pad
@@ -85,10 +86,9 @@ def draw():
         fill(0xffFF0000)
         rect(padX+2, padY+2, padWidth-4, 16, 15)
     
-    # if the ball in in the region of bricks
-    if y < bHeight:
-        # when the ball hits the bricks
-        if bricks[x // bWidth]:
+    # brick and ball collision detection
+    if y < bHeight: # if the ball'x is in the region of bricks
+        if bricks[x // bWidth]: # when the ball'y hits the bricks
             ydir *= -1
             bricks[x // bWidth] = False
         

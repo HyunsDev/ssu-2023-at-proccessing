@@ -1,7 +1,7 @@
 # color pallette
 # color: alpha(opacity), red, green, blue
 colors = [0xffff0000, 0xffffff00, 0xff0000ff, 0xff000000, 0xffffffff]
-
+#colors[10]
 # https://py.processing.org/reference/color.html
 
 import random 
@@ -19,6 +19,10 @@ def draw():
         diam = random.random() * 200
         ellipse(random.random()*width, random.random()*height, diam, diam)
         i += 1
+        
+        
+        
+        
         
         
         

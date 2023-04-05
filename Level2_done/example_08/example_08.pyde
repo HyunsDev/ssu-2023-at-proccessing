@@ -2,7 +2,7 @@
 
 def setup():
     size(600, 600)
-    frameRate(2)
+    frameRate(1)
     noStroke()
 
 def draw():
@@ -16,3 +16,10 @@ def draw():
         diam = random(100, 200)
         ellipse(random(width), random(height), diam, diam)
         i += 1
+        
+        
+    
+    
+
+
+#

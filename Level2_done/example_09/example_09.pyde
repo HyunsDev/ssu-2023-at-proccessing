@@ -27,19 +27,24 @@ while i < 3:
     print(animals[i])
     i += 1
 
+animals = ["dog", "cat", "bird"]
+
 # for loop
 for animal in animals:
     print(animal)
     
-
+for a in animals:
+    print(a)
+    
 numbers = [1, 2, 3, 100, 20, 123]
 print(numbers)
 print(numbers[4])
     
 for n in numbers:
-    if n == 100:
-        print("100")
-    print(n)
+    if n > 100:
+        print(n, "score is larger than 100")
+    else:
+        print(n)
     
     
     
